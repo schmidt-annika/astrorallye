@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPad Auswahl</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+	<link rel="apple-touch-startup-image" href="Ladescreen.png">
+	<script src="script.js"></script>
+	<meta name="apple-mobile-web-app-title" content="AstroRallye">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<!--
+	<div id="anleitung">
+		<h1>Bitte fügen Sie die Progressive Web App zu ihrem Homebildschirm hinzu</h1>
+		<p>Tippen Sie dazu auf das Teilensymbol <img src="pfad_zum_bild.jpg" alt="Bildbeschreibung" style="width: 50px; height: auto;"> am oberen rechten Bildschirmrand. </p>
+	</div> -->
+	<div id="myNav" class="navigator">
+
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	  <div class="overlay-content">
+		<a id="spielrundebeenden" onclick="beendenabfrage()" href="#">Spielrunde beenden</a>
+		<div id="beendenabfrage" style="display: none;">
+			Der aktuelle Spielstand wird nicht gespeichert.
+			<div class="button-container-auswahl">
+				<button class="button-auswahl-1-1" ontouchstart="" onclick="abbrechen2()">Abbrechen</button>
+				<button class="button-auswahl-2-2" ontouchstart="" onclick="beenden()">Okay</button>
+			</div>
+		</div>
+		<a id="rallyeuebrspringen" onclick="rallyeuebrspringen()" href="#">Rallye überspringen</a>
+		<div id="passwortabfrage" style="display: none;">
+			<input type="text" id="passwort-input" placeholder="Passwort">
+			<div class="button-container-auswahl">
+				<button class="button-auswahl-1" ontouchstart="" onclick="abbrechen()">Abbrechen</button>
+				<button class="button-auswahl-2" ontouchstart="" onclick="loseung()">Okay</button>
+			</div>
+		</div>
+	  </div>
+	</div>
+	<a class = "icon" id="icon" onclick="openNav()" style="display: none;">
+		<i class="fa fa-bars"></i>
+	</a>
+	<div class="index" id="index">
+		<div class="container">
+			<div class="overlay">
+				<div class="content">
+					<h1>iPad wählen</h1>
+					<div class="column-container">
+						<div class="column">
+							<p>Um die Rallye zu starten benötigen Sie 15 iPads. Für einen reibungslosen Ablauf wählen Sie auf den 15 iPads jeweils einen der 15 Buttons. Sollten weniger als 15 Teams an der Rallye teilnehmen, wählen Sie dennoch den Button.</p>
+						</div>
+						<div class="column">
+							<p>1Gehen Sie auf dem betreffenden iPad anschließend in den Menübereich (oben links), wählen Sie "Rallye überspringen" und geben Sie das Passwort ein. So gelangen Sie direkt zur Auflösungsseite.</p>
+						</div>
+					</div>
+					<div class="button-container">
+						<button class="button" ontouchstart="" onclick="selectList(1)">iPad 1</button>
+						<button class="button" ontouchstart="" onclick="selectList(2)">iPad 2</button>
+						<button class="button" ontouchstart="" onclick="selectList(3)">iPad 3</button>
+						<button class="button" ontouchstart="" onclick="selectList(4)">iPad 4</button>
+						<button class="button" ontouchstart="" onclick="selectList(5)">iPad 5</button>
+						<button class="button" ontouchstart="" onclick="selectList(6)">iPad 6</button>
+						<button class="button" ontouchstart="" onclick="selectList(7)">iPad 7</button>
+						<button class="button" ontouchstart="" onclick="selectList(8)">iPad 8</button>
+						<button class="button" ontouchstart="" onclick="selectList(9)">iPad 9</button>
+						<button class="button" ontouchstart="" onclick="selectList(10)">iPad 10</button>
+						<button class="button" ontouchstart="" onclick="selectList(11)">iPad 11</button>
+						<button class="button" ontouchstart="" onclick="selectList(12)">iPad 12</button>
+						<button class="button" ontouchstart="" onclick="selectList(13)">iPad 13</button>
+						<button class="button" ontouchstart="" onclick="selectList(14)">iPad 14</button>
+						<button class="button" ontouchstart="" onclick="selectList(15)">iPad 15</button>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div class="start" id="start">
+		<div class="container">
+			<div class="overlay">
+				<div class="content">
+					<h1>Dringend!</h1>
+					<p>Ein verzweifelter Hilferuf erreicht euch aus den tiefen des Weltalls:
+					Die "LesBar"-Mission steht vor dem Abgrund und benötigt eure heldenhafte Unterstützung.
+					Wagemutige Astronauten haben sich aufgemacht, einen fernen Planeten zu erforschen, doch plötzlich versagen die Bordcomputer ihren Dienst. 
+					Ohne sie droht eine katastrophale Landung! Die Lösung liegt in der schiffseigenen Bibliothek verborgen, doch die Zeit drängt.
+					Es ist an euch, die entscheidenden Informationen für eine sichere Landung zu finden. Ihr seid der letzte Hoffnungsträger der Mission!</p>
+					<div class="input-container">
+						<input type="text" id="name-input" placeholder="Euer Crew-Name">
+						<button class="button submit" ontouchstart="" onclick="nextPage()">&#10132;</button>
+					</div>
+					<div id="fehlermeldung" style="display: none;">
+						Dieses Feld muss ausgefüllt werden.
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div class="frage" id="frage">
+		<div class="container">
+			<div id="falsch-bildschirm" class="overlay-falsch">
+				<div class="overlay-content-falsch">
+					<h1 class="nochmal-button" onclick="closefalschbildschirm()">
+						<span class="verschwinden1">N</span><span class="verschwinden2">o</span><span class="verschwnden3">c</span><span class="verschwinden2">h</span>m<span class="verschwinden3">a</span><span class="verschwinden1">l</span>
+					</h1>
+				</div>
+			</div>		
+			<div id="richtig-bildschirm" class="overlay-richtig">
+				<div class="overlay-content-richtig">
+					<h1 class="weiter-button" onclick="closerichtigbildschirm()">
+						<span class="verschwinden2">W</span><span class="verschwinden1">e</span><span class="verschwinden2">it<span class="verschwinden1">e</span><span class="verschwinden3">r</span>
+					</h1>
+				</div>
+			</div>	
+			<div class="overlay">
+				<div class="content">
+					<h1 id="question-heading">Frage 1</h1>
+					<p class="centered-question"><span id="question-text"></span></p>
+					<div class="input-container">
+						<input type="text" id="answer-input" placeholder="Antwort eingeben">
+						<button class="button submit" ontouchstart="" onclick="changeQuestion()">&#10132;</button>
+					</div>
+					<div id="fehlermeldung2" style="display: none;">
+						Gebt zuerst eure Antwort ein.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="buchstabe" id="buchstabe">
+		<div class="container">
+			<div class="overlay">
+					<div class="content">
+						<h1 class="buchstabeText"><span id="buchstabe2"></span></h1>
+						<h1 class="sehrgut">Sehr gut, <span id="crewname"></span>!</h1>
+						<p> Ihr habt es geschafft und konntet der LesBar-Mission rechtzeitig die benötigten Informationen zustellen. Jetzt müsst ihr es nur noch schaffen, dass Schiff sicher zu landen - ein weiteres Mal ist euer Teamgeist gefragt.</p>
+						<p> Bringt euren Buchstaben und die der anderen Teams in die richtige Reihenfolge, um einen Lösungssatz zu erhalten.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

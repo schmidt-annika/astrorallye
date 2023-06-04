@@ -1,0 +1,401 @@
+@font-face {
+  font-family: 'The Steady Hand';
+  src: url('The Steady Hand.otf') format('opentype')
+  font-family: 'The Steady Hand BOLD';
+  src: url('The Steady Hand BOLD.otf') format('opentype')
+}
+
+
+html, body {
+  height:100%;
+  margin: 0px;
+  touch-action: manipulation;
+}
+
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+    font-family: The Steady Hand, Arial, sans-serif;
+    text-align: center;
+	background-color: #080129;
+}
+
+.index, .frage, .start, .buchstabe, .anleitung {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow-y: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.index {
+	z-index: 0; 
+	display: block;
+    background-image: url("Hintergrund.png");
+	background-position: center;
+}
+
+.start {
+	z-index: 1; 
+	background-image: url("Anfang.png");
+	background-position: center;
+}
+
+.frage {
+	z-index: 2; 
+	background-image: url("Frage1.png");
+	background-position: bottom;
+}
+
+.buchstabe {
+	z-index: 3; 
+	background-image: url("Buchstabe.png");
+	background-position: center;
+}
+
+
+.container {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.overlay {
+    position: relative;
+    background-color: rgba(4, 0, 20, 0.5);
+    border-radius: 10px;
+    padding: 50px;
+    color: #d7d7fc;
+}
+
+h1 {
+    color: #d7d7fc;
+	font-size: 40px;
+	font-family: The Steady Hand BOLD, The Steady Hand, Arial, sans-serif;
+}
+
+.sehrgut {
+	font-size: 30px;
+}
+
+.buchstabeText {
+    color: #d7d7fc;
+	font-size: 300px;
+	font-family: The Steady Hand BOLD, The Steady Hand, Arial, sans-serif;
+	margin: 5px
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    flex-basis: 48%;
+}
+
+.icon {
+	display: none;
+	z-index: 20;
+	position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+	color: #d7d7fc;
+}
+
+p {
+    color: #d7d7fc;
+	text-align: justify;
+	font-size: 20px;
+}
+
+.centered-question {
+  text-align: center;
+}
+
+input[type="text"],
+button {
+  font-size: 20px;
+
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.button.submit {
+    padding: 10.5px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.button, .button-auswahl-1, .button-auswahl-2, .button-auswahl-1-1, .button-auswahl-2-2  {
+  background-color: #080129;
+  border: 1px solid #d7d7fc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #d7d7fc;
+  cursor: pointer;
+  display: inline-block;
+  font-family: The Steady Hand, Arial, Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button:active {
+  background-color: #d7d7fc;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input { 
+	background-color: #080129;
+	color: #d7d7fc;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #d7d7fc;
+	font-family: The Steady Hand, Arial, sans-serif;
+}
+
+input::placeholder{
+	color: #b8b7ff;
+}
+
+input:focus {
+	color: #b8b7ff;
+	outline-color: #d7d7fc;
+}
+
+.navigator {
+	height: 0;
+	width: 100%;
+	position: fixed; 
+	z-index: 30; 
+	left: 0;
+	top: 0;
+	background-color: rgb(4, 0, 20); 
+	background-color: rgba(4, 0, 20, 0.9); 
+	overflow-y: hidden; 
+	transition: 0.5s; 
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+
+a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #d7d7fc;
+  display: block; 
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#fehlermeldung, #fehlermeldung2 {
+  display: none;
+  margin-top: 10px;
+  color: #ff3355;
+}
+
+#passwortabfrage, #beendenabfrage {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#beendenabfrage {
+	color: #d7d7fc;
+	font-size: 20px;
+}
+
+#passwort-input {
+	border-radius: 5px 5px 0px 0px;
+	margin-top: 10px;
+	gap: 0px;
+}
+
+.button-container-auswahl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+  margin-bottom: 10px;
+}
+
+.button-auswahl-1, .button-auswahl-2, .button-auswahl-1-1, .button-auswahl-2-2 {
+	padding: 10px 20px;
+}
+
+.button-auswahl-1 {
+	border-radius: 0px 0px 0px 5px;
+	color: #ff3355;
+}
+
+.button-auswahl-2 {
+	border-radius: 0px 0px 5px 0px;
+}
+
+.button-auswahl-1-1, .button-auswahl-2-2 {
+	margin-top: 10px;
+}
+
+.button-auswahl-1-1 {
+	border-radius: 5px 0px 0px 5px;
+	color: #ff3355;
+}
+
+.button-auswahl-2-2 {
+	border-radius: 0px 5px 5px 0px;
+}
+
+
+.overlay-falsch, .overlay-richtig {  
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 40;
+	top: 0;
+	overflow-x: hidden; 
+	transition: 0.5s;
+}
+
+.overlay-falsch {
+	background-image: url("Falsch.png");
+	left: 0;
+}
+
+.overlay-richtig {
+	background-image: url("Richtig.png");
+	right: 0;
+}
+
+
+.overlay-content-falsch, .overlay-content-richtig {
+  position: relative;
+  top: 15%; 
+  width: 100%; 
+  text-align: center;
+}
+
+
+.nochmal-button, .weiter-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 60px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.nochmal-button {
+	text-shadow:
+		0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 40px #f00,
+		0 0 80px #f00,
+		0 0 90px #f00,
+		0 0 100px #f00,
+		0 0 150px #f00;
+}
+
+.weiter-button {
+	text-shadow:
+		0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 40px #0f0,
+		0 0 80px #0f0,
+		0 0 90px #0f0,
+		0 0 100px #0f0,
+		0 0 150px #0f0;
+}
+
+@keyframes flicker {
+	0% {opacity: 0.9;}
+	10% {opacity: 1;}
+	20% {opacity: 0.8;}
+	40% {opacity: 1;}
+	50% {opacity: 0.9;}
+	60% {opacity: 1;}
+	80% {opacity: 0.7;}
+	100% {opacity: 1;}
+}
+
+.verschwinden1, .verschwinden2, .verschwinden3 {
+  animation: flicker 1s infinite;
+}
+
+.verschwinden1{
+	animation-delay: 0.2s;
+}
+
+.verschwinden2{
+	animation-delay: 0.3s;
+}
+
+.verschwinden3{
+	animation-delay: 0.5s;
+}
+
