@@ -227,6 +227,9 @@ input:focus {
 
 .overlay-content {
   position: relative;
+
+  justify-content: center;
+  align-items: center;
   top: 25%; 
   width: 100%; 
   text-align: center; 
@@ -263,6 +266,20 @@ a {
 }
 
 #beendenabfrage {
+	color: #d7d7fc;
+	font-size: 20px;
+}
+
+#lizenz {
+	width: 80%;
+	color: #9696b0;
+	text-align: center;
+	font-size: 15px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#nummernennen {
 	color: #d7d7fc;
 	font-size: 20px;
 }
