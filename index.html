@@ -14,11 +14,6 @@
 	<meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
-<!--
-	<div id="anleitung">
-		<h1>Bitte fügen Sie die Progressive Web App zu ihrem Homebildschirm hinzu</h1>
-		<p>Tippen Sie dazu auf das Teilensymbol <img src="pfad_zum_bild.jpg" alt="Bildbeschreibung" style="width: 50px; height: auto;"> am oberen rechten Bildschirmrand. </p>
-	</div> -->
 	<div id="myNav" class="navigator">
 
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -39,6 +34,39 @@
 				<button class="button-auswahl-1" ontouchstart="" onclick="abbrechen()">Abbrechen</button>
 				<button class="button-auswahl-2" ontouchstart="" onclick="loseung()">Okay</button>
 			</div>
+		</div>
+		<a id="padnummer" onclick="padnummer()" href="#">iPad-Nummer</a>
+		<div id="nummernennen" style="display: none;">iPad-Nummer: <span id="nummervomipad"></span></div>
+		<a id="infos" onclick="infos()" href="#">Infos</a>
+		<div id="lizenz" style="display: none;">
+			BSD 3-Clause License
+			<br />
+			Copyright (c) 2023, Annika Schmidt
+			<br />
+			Redistribution and use in source and binary forms, with or without
+			modification, are permitted provided that the following conditions are met:
+			<br />
+			1. Redistributions of source code must retain the above copyright notice, this
+			   list of conditions and the following disclaimer.
+			<br />
+			2. Redistributions in binary form must reproduce the above copyright notice,
+			   this list of conditions and the following disclaimer in the documentation
+			   and/or other materials provided with the distribution.
+			<br />
+			3. Neither the name of the copyright holder nor the names of its
+			   contributors may be used to endorse or promote products derived from
+			   this software without specific prior written permission.
+			<br />
+			THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+			AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+			IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+			DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+			FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+			DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+			SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+			CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+			OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+			OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		</div>
 	  </div>
 	</div>
