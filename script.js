@@ -1,94 +1,94 @@
-var passwort = "LesBar-Crew";
+var passwort = "LesBar-Crew"; // Passwort, um die Rallye zu überspringen
 
-var frage1 = "Frage 1.1";
-var antwort1 = "Antwort 1.1";
+var frage1 = "In welchem Land befindet sich Asterix in Band 14 der Comicreihe?";
+var antwort1 = "Spanien";
 
-var frage2 = "Frage 1.2";
-var antwort2 = "Antwort 1.2";
+var frage2 = "Um welches Thema geht es im „Was ist Was?“ Band 98?";
+var antwort2 = "Kriminalistik";
 
-var frage3 = "Frage 1.3";
-var antwort3 = "Antwort 1.3";
+var frage3 = "Um welches Tier geht es auf den Seiten 52 und 53 im Guinessbuch der Rekorde 2023? ";
+var antwort3 = "Blauwal";
 
-var frage4 = "Frage 1.4";
-var antwort4 = "Antwort 1.4";
+var frage4 = "Welchen Titel hat das Buch mit der Signatur 5.2 PAL?";
+var antwort4 = "Wunder";
 
-var frage5 = "Frage 1.5";
-var antwort5 = "Antwort 1.5";
+var frage5 = "Welche Signatur hat Erebos 2 von Ursula Poznaski?";
+var antwort5 = "5.2 POZ";
 
-var frage6 = "Frage 1.6";
-var antwort6 = "Antwort 1.6";
+var frage6 = "Gibt es Blockbestände des Faches Französisch?";
+var antwort6 = "Ja";
 
-var frage7 = "Frage 1.7";
-var antwort7 = "Antwort 1.7";
+var frage7 = "Wann war die erste Lesepause?";
+var antwort7 = "13.05.2022";
 
-var frage8 = "Frage 1.8";
-var antwort8 = "Antwort 1.8";
+var frage8 = "Welche Farbe haben die Mülleimer mit Deckel in der LesBar?";
+var antwort8 = "Grün";
 
-var frage9 = "Frage 1.9";
-var antwort9 = "Antwort 1.9";
+var frage9 = "Wieviele grüne Schließfächer gibt es?";
+var antwort9 = "7";
 
-var frage10 = "Frage 1.10";
-var antwort10 = "Antwort 1.10";
+var frage10 = "Wie lautet der Name des lateinischen Wörterbuchs?";
+var antwort10 = "Stowasser";
 
-var frage11 = "Frage 1.11";
-var antwort11 = "Antwort 1.11";
+var frage11 = "Welches Tier sitzt auf den Bücherbäumen mit den Empfehlungen?";
+var antwort11 = "Eule";
 
-var frage12 = "Frage 1.12";
-var antwort12 = "Antwort 1.12";
+var frage12 = "Von wem stammt der Spruch, der mit Büchern an die Wand „geschrieben“ ist?";
+var antwort12 = "Cicero";
 
-var frage13 = "Frage 1.13";
-var antwort13 = "Antwort 1.13";
+var frage13 = "Wieviele Fächer hat das höchste fahrbare Bücherregal?";
+var antwort13 = "20";
 
-var frage14 = "Frage 1.14";
-var antwort14 = "Antwort 1.14";
+var frage14 = "Wieviele blaulila Sitzwürfel gibt es?";
+var antwort14 = "2";
 
-var frage15 = "Frage 1.15";
-var antwort15 = "Antwort 1.15";
+var frage15 = "Was ist in der LesBar nicht erlaubt? Notiere den Lösungsbuchstaben! <br><br> a. Trinken <br> b. Atmen <br> c. Lesen";
+var antwort15 = "a.";
 
-var frage16 = "Frage 2.1";
-var antwort16 = "Antwort 2.1";
+var frage16 = "Was ist in der Leseecke erlaubt? Notiere den Lösungsbuchstaben! <br><br> a. Schuhe <br> b. Stöbern <br> c. Kissenschlachten";
+var antwort16 = "b.";
 
-var frage17 = "Frage 2.2";
-var antwort17 = "Antwort 2.2";
+var frage17 = "Welche Form hat die Uhr in der LesBar?";
+var antwort17 = "Stern";
 
-var frage18 = "Frage 2.3";
-var antwort18 = "Antwort 2.3";
+var frage18 = "Gibt es Computer in der LesBar?";
+var antwort18 = "Ja";
 
-var frage19 = "Frage 2.4";
-var antwort19 = "Antwort 2.4";
+var frage19 = "Welche Farbe taucht in der LesBar immer wieder auf?";
+var antwort19 = "Grün";
 
-var frage20 = "Frage 2.5";
-var antwort20 = "Antwort 2.5";
+var frage20 = "Welcher Gegenstand hat die Nummer BIB-S07?";
+var antwort20 = "Laptop";
 
-var frage21 = "Frage 2.6";
-var antwort21 = "Antwort 2.6";
+var frage21 = "Gibt es auch eine AG zur LesBar?";
+var antwort21 = "Ja";
 
-var frage22 = "Frage 2.7";
-var antwort22 = "Antwort 2.7";
+var frage22 = "In die LesBar-AG darf man ab Klasse ...";
+var antwort22 = "7";
 
-var frage23 = "Frage 2.8";
-var antwort23 = "Antwort 2.8";
+var frage23 = "Was gibt es in der LesBar? Notiere den Lösungsbuchstaben! <br><br> a. Lesequadrat <br> b. Leseecke <br> c. Lesekreis";
+var antwort23 = "b.";
 
-var frage24 = "Frage 2.9";
-var antwort24 = "Antwort 2.9";
+var frage24 = "Gibt es einen Feuerlöscher?";
+var antwort24 = "Ja";
 
-var frage25 = "Frage 2.10";
-var antwort25 = "Antwort 2.10";
+var frage25 = "Was benötigt man zum Ausleiehen eines Buches? Notiere den Lösungsbuchstaben! <br><br> a. Personalausweis <br> b. Krankenkassenkarte <br> c. Schülerausweis";
+var antwort25 = "c.";
 
-var frage26 = "Frage 2.11";
-var antwort26 = "Antwort 2.11";
+var frage26 = "Kann man in der LesBar Unterricht machen?";
+var antwort26 = "Ja";
 
-var frage27 = "Frage 2.12";
-var antwort27 = "Antwort 2.12";
+var frage27 = "Wieviele Notausgänge gibt es?";
+var antwort27 = "2";
 
-var frage28 = "Frage 2.13";
-var antwort28 = "Antwort 2.13";
+var frage28 = "Die Kissen in der Leseecke sind orange und ...";
+var antwort28 = "gelb";
 
-var frage29 = "Frage 2.14";
-var antwort29 = "Antwort 2.14";
+var frage29 = "Wie viele Sessel stehen in der LesBar?";
+var antwort29 = "2";
 
-var frage30 = "Frage 2.15";
-var antwort30 = "Antwort 2.15";
+var frage30 = "In welcher Pause hat die LesBar im Normalfall geöffnet?";
+var antwort30 = "2. Pause";
 
 var questionCounter = 0;
 
@@ -292,6 +292,28 @@ function selectList(listNumber) {
 }
 
 function changeQuestion() {
+	function normalizeAnswer(answer) {
+		let normalized = answer.toLowerCase(); // Konvertiere die Antwort in Kleinbuchstaben
+		normalized = normalized.replace(" ", ''); // Entferne Leerzeichen in der gesamten Antwort
+		normalized = normalized.replace("-", ''); // Entferne Bindestriche
+		normalized = normalized.replace(".", ''); // Entferne Punkte
+		normalized = normalized.replace("eins", "1"); // Ersetze Zahlen durch Wörter (z.B., "eins" wird zu "1")
+		normalized = normalized.replace("zwei", "2");
+		normalized = normalized.replace("drei", "3");
+		normalized = normalized.replace("vier", "4");
+		normalized = normalized.replace("fünf", "5");
+		normalized = normalized.replace("sechs", "6");
+		normalized = normalized.replace("sieben", "7");
+		normalized = normalized.replace("acht", "8");
+		normalized = normalized.replace("neun", "9");
+		normalized = normalized.replace("zwanzig", "20");
+		normalized = normalized.replace("computer", "laptop"); // Ersetzt Computer durch Laptop
+		normalized = normalized.replace("notebook", "laptop"); // Ersetzt Notebook durch Laptop
+		normalized = normalized.replace("siebten", "7"); // Ersetzt siebte durch 7
+		normalized = normalized.replace("Mai", "5"); // Ersetzt das Datum
+		normalized = normalized.replace("05", "5");
+		return normalized;
+	}
 	let questions = JSON.parse(sessionStorage.getItem("questions"));
 	let answers = JSON.parse(sessionStorage.getItem("answers"));
     var questionHeading = document.getElementById("question-heading");
@@ -301,21 +323,21 @@ function changeQuestion() {
 	var body = document.body;
 	var imagecounter = questionCounter+1;
 	var fehlermeldung = document.getElementById('fehlermeldung2');
-	if (questionCounter == 0) {
+	if (questionCounter == 0) { 
 		questionCounter++;
 		questionHeading.textContent = "Frage 1";
-        document.getElementById("question-text").textContent = questions[0];
+        document.getElementById("question-text").innerHTML = questions[0];
 		document.getElementById("frage").style.backgroundImage = "url('Frage" + imagecounter + ".png')";
-	} else if (index < questions.length) {
+	} else if (index < questions.length) { // Hier könnte man die Menge an Fragen steuern, hier sind es "questions.lenght" = 15, wobei 15 das Maximum ist
 		var antwort = inputField.value;
 		if (antwort == "") {
 			fehlermeldung.style.display = 'block';
-		} else if (antwort == answers[index-1]){
+		} else if (normalizeAnswer(antwort).includes(normalizeAnswer(answers[index-1]))){ // Hier wird die Antwort geprüft, es ist ausreichend, wenn die gegebene Antwort die gewünschte Antwort enthält: Es sind drei Bücher = drei Bücher
 			questionCounter++;
 			openrichtigbildschirm();
 			fehlermeldung.style.display = 'none';
 			questionHeading.textContent = "Frage " + questionCounter;
-			document.getElementById("question-text").textContent = currentQuestion;
+			document.getElementById("question-text").innerHTML = currentQuestion;
 			while (imagecounter > 5) {
 				imagecounter = imagecounter - 5;
 			}
