@@ -88,7 +88,7 @@ var frage29 = "Wie viele Sessel stehen in der LesBar?";
 var antwort29 = "2";
 
 var frage30 = "In welcher Pause hat die LesBar im Normalfall geöffnet?";
-var antwort30 = "2. Pause";
+var antwort30 = "2.";
 
 var questionCounter = 0;
 
