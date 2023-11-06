@@ -294,9 +294,9 @@ function selectList(listNumber) {
 function changeQuestion() {
 	function normalizeAnswer(answer) {
 		let normalized = answer.toLowerCase(); // Konvertiere die Antwort in Kleinbuchstaben
-		normalized = normalized.replace(" ", ''); // Entferne Leerzeichen in der gesamten Antwort
-		normalized = normalized.replace("-", ''); // Entferne Bindestriche
-		normalized = normalized.replace(".", ''); // Entferne Punkte
+		normalized = normalized.replace(/ /g, ''); // Entferne Leerzeichen in der gesamten Antwort
+		normalized = normalized.replace(/-/g, ''); // Entferne Bindestriche
+		normalized = normalized.replace(/\./g, ''); // Entferne Punkte
 		normalized = normalized.replace("eins", "1"); // Ersetze Zahlen durch Wörter (z.B., "eins" wird zu "1")
 		normalized = normalized.replace("zwei", "2");
 		normalized = normalized.replace("drei", "3");
