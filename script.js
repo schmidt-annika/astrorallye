@@ -310,8 +310,9 @@ function changeQuestion() {
 		normalized = normalized.replace("computer", "laptop"); // Ersetzt Computer durch Laptop
 		normalized = normalized.replace("notebook", "laptop"); // Ersetzt Notebook durch Laptop
 		normalized = normalized.replace("siebten", "7"); // Ersetzt siebte durch 7
-		normalized = normalized.replace("Mai", "5"); // Ersetzt das Datum
+		normalized = normalized.replace("mai", "5"); // Ersetzt das Datum
 		normalized = normalized.replace("05", "5");
+		normalized = normalized.replace("2022", "22");
 		return normalized;
 	}
 	let questions = JSON.parse(sessionStorage.getItem("questions"));
