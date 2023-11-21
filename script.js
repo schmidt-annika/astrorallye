@@ -12,8 +12,8 @@ var antwort3 = "Blauwal";
 var frage4 = "Welchen Titel hat das Buch mit der Signatur 5.2 PAL?";
 var antwort4 = "Wunder";
 
-var frage5 = "Welche Signatur hat Erebos 2 von Ursula Poznaski?";
-var antwort5 = "5.2 POZ";
+var frage5 = "Welche Signatur haben alle Bücher von Ursula Poznaski?";
+var antwort5 = "POZ";
 
 var frage6 = "Gibt es Blockbestände des Faches Französisch?";
 var antwort6 = "Ja";
@@ -234,47 +234,47 @@ function selectList(listNumber) {
         case 7:
             questions = questions7;
 			answers = answers7;
-			buchstabe = "E";
+			buchstabe = "ER";
             break;
         case 8:
             questions = questions8;
 			answers = answers8;
-			buchstabe = "R";
+			buchstabe = "A";
             break;
         case 9:
             questions = questions9;
 			answers = answers9;
-			buchstabe = "A";
+			buchstabe = "U";
             break;
         case 10:
             questions = questions10;
 			answers = answers10;
-			buchstabe = "U";
+			buchstabe = "S";
             break;
         case 11:
             questions = questions11;
 			answers = answers11;
-			buchstabe = "S";
+			buchstabe = "L";
             break;
         case 12:
             questions = questions12;
 			answers = answers12;
-			buchstabe = "L";
+			buchstabe = "E";
             break;
         case 13:
             questions = questions13;
 			answers = answers13;
-			buchstabe = "E";
+			buchstabe = "I";
             break;
         case 14:
             questions = questions14;
 			answers = answers14;
-			buchstabe = "I";
+			buchstabe = "H";
             break;			
         case 15:
             questions = questions15;
 			answers = answers15;
-			buchstabe = "H";
+			buchstabe = "E";
             break;
 		default:
 			questions = questions15;
